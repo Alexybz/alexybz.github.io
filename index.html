@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Zhang Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type = "/image.png" href="/Images/alex-favicon-color.png">
     <script src="https://kit.fontawesome.com/3ca59fa061.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,7 +15,7 @@
 <div id = "header">
     <div class="container">
         <nav>
-            <img src="Images/Alex_logo1.png" class="logo">
+            <img src="Images/alex-new-logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,7 +28,7 @@
         </nav>
         <div class="header-text">
             <p>Software Engineer</p>
-            <h1>Hi, I'm <span>Alex Zhang</span><br> from Michigan.</h1>
+            <h1>Hi, I'm <span>Alex</span><br></h1>
         </div>
     </div>
 </div>
@@ -40,7 +41,7 @@
             </div> 
             <div class="about-col-2">
                 <h1 class ="sub-title">About Me</h1>
-                <p>Hi, I'm Alex. I'm a college student pursuing a BS in Computer Science with a double major in Applied Statistics. I have experience with C++, JavaScript, Python, and more. I am passionate about web development, software development, and ai. In my free time, I love taking walks, going to the gym, and skiing. If you have any questions, please feel free to contact me.</p>
+                <p>I'm Alex, a University student pursuing a BS in Computer Science with a double major in Applied Statistics. I have experience with C++, JavaScript, Python, and more, and I'm very passionate about software development and AI. In my free time, I love taking walks, going to the gym, and skiing. If you have any questions, please feel free to contact me.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -48,21 +49,54 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Web Development</span><br>Full-Stack(React.js, Node.js/Express.js, AWS)</li>
-                        <li><span>Software Engineering</span><br>Game development</li>
-                        <li><span>AI</span><br>Supervised machine learning models, fintech stock predictions</li>
+                        <li><span>Algorithmic Programming</span><br>I have experience with low-level programming in C and C++, 
+                            which allows for high-performance software development. This includes systems programming, 
+                            optimizing algorithms, and working with embedded systems where performance and memory management are crucial.
+                        </li>
+                        <li><span>Full-Stack Development (React.js, Node/Express.js, AWS)</span><br>I specialize in full-stack development
+                             using React for dynamic, responsive front-end interfaces, Node.js and Express for robust server-side applications,
+                              and AWS for scalable, cloud-based deployment. I deliver end-to-end solutions by creating modular UIs, developing 
+                              efficient API to ensure seamless integration, scalability, and optimized performance across the entire application.
+                        </li>
+                        <li><span>Python</span><br>I leverage Python for a wide range of development tasks, including AI and machine learning as
+                             well as web development with Django. In the AI and ML domain, I use Python's rich ecosystem of libraries, such as 
+                             TensorFlow, Keras, scikit-learn, and Pandas, to build and deploy machine learning models for tasks like predictive 
+                             analytics, natural language processing, and computer vision. I focus on creating models that are optimized for accuracy
+                              and performance, using techniques like deep learning, neural networks, and transfer learning to achieve state-of-the-art results.
+                        </li>
+                        <li><span>Other Skills</span><br>I offer a range of complementary services to support your software development needs. 
+                            I specialize in API development, creating RESTful endpoints that enable seamless data exchange and integration
+                             between systems. For version control, I use Git to manage codebases efficiently, ensuring smooth collaboration, code quality,
+                            and history tracking. Additionally, I provide consulting services, offering guidance on software architecture, technology 
+                            selection, and development best practices to help businesses make informed decisions and achieve their technical goals.
+                        </li>
+                        <!-- <li><span>Artificial Intelligence</span><br>Supervised Machine Learning Models, Fintech Stock Prediction Models</li> -->
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Maize Lab</span><br>Software Enginner Intern</li>
-                        <li><span>Ethereal Realms Co.</span><br>Software Enginner Intern</li>
-                        <li><span>Phygtl</span><br>Product Development Intern</li>
+                        <li><span>Maize Lab</span><br>Software Enginner Intern - Launched v1.0 of responsive web application using React.js generating user-specific URLs by reading in registration
+                            data and routing data from user profile dataset to create unique profile-linked QR Codes for over 500 users
+                            Developed a script in JavaScript dynamically generating QR codes from URLs received via postMessage, converting
+                            them to PNG format and sending it back to the parent site for seamless integration with AWS RDS
+                            Initialized Express router in Node.js to handle user dashboard linkage with PostgreSQL database using Sequelize
+                            ORM to retrieve user data and implemented conditional rendering for private and public dashboard views</li>
+                        <li><span>Ethereal Realms Co.</span><br>Software Enginner Intern - Engineered RESTful API prototype using Node.js and Express.js for employee information management through
+                            SQLite3 database enabling CRUD on employee data handling for over 25 employees optimizing user experience
+                            Optimized user engagement by refining company website and experiencing full web application development cycle
+                            with Bootstrap and SQL leading to acquisition of two major clients and attracting investment of $10,000</li>
+                        <li><span>Phygtl</span><br>Product Development Intern - Supported commercialization of AI, AR, and Blockchain technologies for mobile application of Web3 social media
+                            platform allowing users to create digital objects while maintaining data privacy through user data decentralization
+                            Curated and managed targeted list of 20,000+ executives through HubSpot and Excel, constructing custom
+                            outreach sequences presenting products to investors and partners to drive Phygtl’s growth and expansion efforts
+                            Engaged with 5+ corporate venture capital representatives from various Fortune 50 companies to showcase Phygtl’s
+                            value proposition, securing 41% response rate among contacts with 67% taking further steps in partnership</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>University of Michigan-Ann Arbor</span><br>BS in Computer Science and Statistics</li>
+                        <li><span>University of Michigan-Ann Arbor</span><br>BS in Computer Science and Statistics<br>Coursework: Data Structures and Algorithms,
+                        Computer Organization, Programming and Data Structures, Discrete Math, Microeconomics, Introduction to Statsitcs and Data Analysis</li>
                         <li><span>Skyline High School</span><br>Top 5%</li>
                     </ul>
                 </div>
@@ -76,21 +110,23 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>I've been interested in designing websites since high school. I have assisted in the remodeling ANN-HUA Chinese School's website, creating dynamic and responsive websites, as well as v1.0 of Maize Lab's 1glance web application.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
                 <i class="fa-solid fa-computer"></i>
                 <h2>Software</h2>
-                <p>As a software engineer, I create custom software solutions designed to meet specific business needs with scalability and security in mind.</p>
+                <p>As a software engineer, I specialize in creating custom software solutions tailored to address 
+                    specific business needs. My services cover the entire software development lifecycle, from initial
+                     consultation and requirements gathering to deployment and ongoing support, ensuring that each 
+                     solution is not only functional but also scalable, secure, and future-proof.
+                </p>
                 <a href="#">learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-network-wired"></i>
-                <h2>AI</h2>
-                <p>I have developed multiple machine learning models through keras and tensorflow, and have experience creating recurrent neural networks through LSTMs and multi-layered machine learning models</p>
+                <h2>Artificial Intelligence</h2>
+                <p>As a software engineer with a strong background in machine learning and artificial intelligence (AI), 
+                    I offer specialized services in developing and deploying intelligent systems. With hands-on experience
+                     in Keras, TensorFlow, and various neural network architectures, I help businesses harness the power of
+                     AI to solve complex problems and automate tasks.
+                </p>
                 <a href="#">learn more</a>
             </div>
         </div>
@@ -102,27 +138,39 @@
         <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="Images/AnnHua.png" alt="work-img">
+                    <img src="Images/Icon-Only-White.png" alt="work-img">
                     <div class="layer">
-                        <h3>ANN-HUA Chinese School</h3>
-                        <p>Redesigned ANN-HUA's website furthering customer satisfaction and appeal</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>alexTube</h3>
+                        <p>A custom-built video-sharing platform inspired by YouTube, 
+                            designed to offer a customized and streamlined video experience. With AlexTube, 
+                            users can explore trending videos, browse different categories, and stay updated with 
+                            the latest content. Built using modern web technologies, AlexTube provides a fast, 
+                            responsive, and user-friendly interface, making it easy to discover and enjoy videos 
+                            tailored to your interests.                       </p>
+                        <button class="icon-button" onclick="window.open('https://alexybz.github.io/alexTube/')"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="Images/Cards_photo.png" alt="work-img">
+                    <img src="Images/Cards_photo.png" alt="work-img"> 
                     <div class="layer">
                         <h3>Euchre</h3>
-                        <p>Created a virtual version of the card game "Euchre" with AI and multiplayer options</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>Developed a virtual version of the card game Euchre, featuring both AI-powered opponents
+                             and multiplayer functionality, allowing players to enjoy competitive matches against the
+                              computer or other users in real-time.
+                        </p>
+                        <button class="icon-button" onclick="window.location.href='#';"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="Images/stock_predictor.png" alt="work-img">
+                    <div class="stock">
+                    <img src="Images/stock_market.png" alt="work-img">
+                    </div>
                     <div class="layer">
                         <h3>Stock Market Predictor</h3>
-                        <p>Created a robust model predicting future stock prices based on historical datasets</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>Developed a powerful predictive model for forecasting stock prices using historical data, leveraging advanced
+                             machine learning techniques to identify patterns and trends for accurate future price predictions.
+                        </p>
+                        <button class="icon-button" onclick="window.open('https://github.com/Alexybz/MDST---STOCK-MARKET-ANALYSIS')"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                     </div>
                 </div>
             </div>
@@ -142,7 +190,7 @@
                     <a href="https://www.instagram.com/alexybz04/"><i class="fa-brands fa-instagram"></i></i></a>
                     <a href="https://github.com/Alexybz"><i class="fa-brands fa-github"></i></i></a>
                 </div>
-                <a href="Images/Alexander_Zhang_Resume.pdf" download class="btn btn2">Download CV</a>
+                <a href="Images/Alexander_Zhang_resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
