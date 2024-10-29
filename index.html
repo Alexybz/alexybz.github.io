@@ -13,13 +13,13 @@
 
 <body>
 <div id = "header">
-    <div class="container">
+    <div class="container fade-in">
         <nav>
             <img src="Images/alex-new-logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -34,10 +34,10 @@
 </div>
 <!----------------about--------------->
 <div id="about">
-    <div class="container">
+    <div class="container fade-in">
         <div class="row">
             <div class="about-col-1">
-              <img src="Images/Headshot.jpg" class="headshot"> 
+              <img class="headshot-img"src="Images/Headshot.jpg" class="headshot"> 
             </div> 
             <div class="about-col-2">
                 <h1 class ="sub-title">About Me</h1>
@@ -50,8 +50,8 @@
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Algorithmic Programming</span><br>I have experience with low-level programming in C and C++, 
-                            which allows for high-performance software development. This includes systems programming, 
-                            optimizing algorithms, and working with embedded systems where performance and memory management are crucial.
+                            which allows for high-performance software development. This includes systems programming 
+                            and working with optimizing algorithms where performance and memory management are crucial.
                         </li>
                         <li><span>Full-Stack Development (React.js, Node/Express.js, AWS)</span><br>I specialize in full-stack development
                              using React for dynamic, responsive front-end interfaces, Node.js and Express for robust server-side applications,
@@ -105,7 +105,7 @@
     </div>
 </div>
 <!------------services-------------->
-<div id="services">
+<!-- <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -131,10 +131,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-----------portfolio------------>
 <div id="portfolio">
-    <div class="container">
+    <div class="container fade-in">
         <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
@@ -174,12 +174,12 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class ="btn">See more</a>
+            <a onclick="window.open('https://github.com/Alexybz?tab=repositories')" class ="btn">See more</a>
     </div>
 </div>
 <!--------contact------->
 <div id="contact">
-    <div class="container">
+    <div class="container fade-in">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -203,9 +203,9 @@
             </div>
         </div>
     </div>
-    <div class="copyright">
+    <!-- <div class="copyright">
         <p>Copyright @ Alex <i class="fa-regular fa-star"></i> Made with HTML, CSS, and JavaScript</p>
-    </div>
+    </div> -->
 </div>
 <script>
 
@@ -250,7 +250,29 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        function checkFadeIn() {
+            fadeInElements.forEach((element)=> {
+                const rect = element.getBoundingClientRect();
+                if(rect.top < window.innerHeight && rect.bottom > 0) {
+                    element.classList.add("visible");
+                } else {
+                    element.classList.remove("visible");
+                }
+            })
+        }
+        window.addEventListener("scroll", checkFadeIn);
+        checkFadeIn();
+    });
   </script>
 </body>
+
 
 </html>
