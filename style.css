@@ -93,17 +93,31 @@ nav ul li a:hover::after{
     height: auto;
     border-radius: 50%;
 }
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 .about-col-1{
     display: flex;
     flex-basis: 35%;
     justify-content: center;
-    
 }
 .about-col-1 img{
     width: 350px;
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: 0px 0px;
+    overflow: hidden;
+}
+.about-companies img{
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20%;
     object-position: 0px 0px;
     overflow: hidden;
 }
@@ -202,17 +216,20 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 45px;
+    align-items: stretch;
 }
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
 }
 .work .one{
     margin-top: -5px;
@@ -279,6 +296,32 @@ nav ul li a:hover::after{
     background: rgb(77, 87, 227);
     cursor:pointer;
 }
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hidebtn{
+    background: black;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(77, 87, 227);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(252, 253, 255);
+    transition: 0.5s;
+}
+.hidebtn:hover{
+    background: rgb(77, 87, 227);
+    cursor:pointer;
+}
+
 /*----------contact----------*/
 #contact{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(54, 54, 57, 0.5)), #161414;
