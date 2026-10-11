@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alexander Zhang · Resume</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font:
+          14px/1.4 Georgia,
+          serif;
+        color: #111;
+        background: #eceeea;
+        margin: 0;
+      }
+      main {
+        max-width: 850px;
+        margin: 30px auto;
+        background: white;
+        padding: 40px 48px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        margin: 0;
+      }
+      h2 {
+        font-size: 17px;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        margin: 18px 0 8px;
+      }
+      h3 {
+        font-size: 14px;
+        margin: 0;
+      }
+      p {
+        margin: 5px 0;
+      }
+      a {
+        color: inherit;
+      }
+      .contacts {
+        text-align: center;
+        font-size: 12px;
+      }
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 5px 0 12px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
+      small {
+        font-weight: normal;
+      }
+      .toolbar {
+        max-width: 850px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        font-family: system-ui;
+      }
+      button {
+        cursor: pointer;
+        padding: 8px 14px;
+        background: #101315;
+        color: white;
+        border: 0;
+        border-radius: 4px;
+      }
+      @page {
+        size: letter;
+        margin: 0.45in;
+      }
+      @media print {
+        body {
+          background: white;
+          font-size: 10px;
+          line-height: 1.25;
+        }
+        main {
+          padding: 0;
+          margin: 0;
+          max-width: none;
+        }
+        .toolbar {
+          display: none;
+        }
+        h1 {
+          font-size: 23px;
+        }
+        h2 {
+          font-size: 13px;
+          margin: 10px 0 5px;
+        }
+        h3 {
+          font-size: 11px;
+        }
+        .contacts {
+          font-size: 10px;
+        }
+        ul {
+          margin: 4px 0 8px;
+        }
+        article {
+          break-inside: avoid;
+        }
+      }
+      @media (max-width: 600px) {
+        main {
+          margin: 0;
+          padding: 24px 18px;
+        }
+        .heading {
+          flex-wrap: wrap;
+          gap: 2px;
+        }
+        .contacts {
+          line-height: 1.8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <a href="index.html">← Portfolio</a
+      ><button onclick="window.print()">Print / Save as PDF</button>
+    </div>
+    <main>
+      <h1>Alexander Zhang</h1>
+      <p class="contacts">
+        <a href="tel:+17348451077">734-845-1077</a> |
+        <a href="mailto:alexyz@umich.edu">alexyz@umich.edu</a> |
+        <a href="https://linkedin.com/in/alexyz1">LinkedIn</a> |
+        <a href="https://github.com/Alexybz">GitHub</a> |
+        <a href="https://alexybz.github.io/">Portfolio</a> | US Citizen
+      </p>
+      <h2>Education</h2>
+      <article>
+        <div class="heading">
+          <h3>Georgia Institute of Technology</h3>
+          <b>May 2028</b>
+        </div>
+        <div class="heading">
+          <i
+            >M.S. Computer Science — Machine Learning specialization,
+            Incoming</i
+          ><i>Atlanta, GA</i>
+        </div>
+      </article>
+      <article>
+        <div class="heading">
+          <h3>University of Michigan</h3>
+          <b>May 2027</b>
+        </div>
+        <div class="heading">
+          <i>B.S. Computer Science, Minor in Business (Stephen M. Ross)</i
+          ><i>Ann Arbor, MI</i>
+        </div>
+        <p>
+          <b>Relevant Coursework:</b> Data Structures &amp; Algorithms,
+          Operating Systems, Distributed Systems, Databases
+        </p>
+      </article>
+      <h2>Experience</h2>
+      <article>
+        <div class="heading">
+          <h3>Google</h3>
+          <b>Aug 2026 – Present</b>
+        </div>
+        <div class="heading">
+          <i>Software Engineer Intern</i><i>New York City, NY</i>
+        </div>
+        <ul>
+          <li>
+            Developed the personalization system for Gemini AI Search Debug
+            using C++ for backend routing and TypeScript/Angular for frontend
+            views, improving search debug optimization for over 5,000 search
+            engineers.
+          </li>
+          <li>
+            Developed client-side preference caching and overview card
+            lazy-loading to completely eliminate browser memory spikes and tab
+            crashes, accelerating debugging workflows for search engineers by
+            45%.
+          </li>
+        </ul>
+      </article>
+      <article>
+        <div class="heading">
+          <h3>Datadog</h3>
+          <b>May 2026 – Aug 2026</b>
+        </div>
+        <div class="heading">
+          <i>Software Engineer Intern</i><i>New York City, NY</i>
+        </div>
+        <ul>
+          <li>
+            Extended a centralized cache to Datadog’s metrics compaction service
+            in Go, maintaining cache synchronization with file creation and
+            deletion during compaction, reducing S3 gets by 95% and saving over
+            $1,000,000/year.
+          </li>
+          <li>
+            Migrated Datadog’s metric query service local caching architecture
+            to a distributed Redis caching layer in Go, enabling stateless
+            deployments and eliminating cache misses during restarts, reducing
+            infrastructure costs by 60%.
+          </li>
+          <li>
+            Optimized file cache keying strategy in Go to reduce redundant
+            allocations and improve memory efficiency during metric queries,
+            reducing live heap size by 100% and lowering CPU time by 8% for
+            relevant workloads.
+          </li>
+        </ul>
+      </article>
+      <article>
+        <div class="heading">
+          <h3>Microsoft</h3>
+          <b>Feb 2026 – May 2026</b>
+        </div>
+        <div class="heading">
+          <i>Software Engineer Intern</i><i>Redmond, WA</i>
+        </div>
+        <ul>
+          <li>
+            Contributed to telemetry infrastructure on Azure processing
+            trillions of spans per day, improving visualization pipelines
+            allowing over 100,000 clients to track reliability of agentic AI
+            applications.
+          </li>
+          <li>
+            Designed and implemented React/TypeScript UI using custom Microsoft
+            controls and Azure framework, enabling visualization of metrics and
+            tracing of agent interactions across distributed GenAI applications
+            in Azure Portal.
+          </li>
+          <li>
+            Improved ingestion pipelines for GenAI evaluation signals using
+            OpenTelemetry (OTel) semantics, capturing evaluation data at the
+            span level and surfacing per-span insights in Azure Portal, reducing
+            debugging time by 80%.
+          </li>
+        </ul>
+      </article>
+      <article>
+        <div class="heading">
+          <h3>Amazon</h3>
+          <b>Jun 2025 – Feb 2026</b>
+        </div>
+        <div class="heading">
+          <i>Software Development Engineer Intern</i><i>Detroit, MI</i>
+        </div>
+        <ul>
+          <li>
+            Implemented and maintained software in Amazon Listings enabling 9
+            million+ Amazon Sellers and Vendors to showcase and list products
+            and offers across amazon.com and 20+ other international
+            marketplaces.
+          </li>
+          <li>
+            Developed bulk-listing system with React, TypeScript, Spring, and
+            Office.js enabling real-time management of 10,000+ products at once,
+            decreasing user workflow completion time by 90% through 1-click
+            automation.
+          </li>
+          <li>
+            Presented project to Amazon directors and senior leaders, resulting
+            in additional team funding, increased headcount, and prioritized
+            expansion of the feature.
+          </li>
+        </ul>
+      </article>
+      <h2>Projects</h2>
+      <article>
+        <h3>
+          Networked File System
+          <small> | C++ · POSIX sockets · UNIX · Multithreading</small>
+        </h3>
+        <ul>
+          <li>
+            Implemented a distributed networked file system in C++ using TCP/IP
+            sockets on UNIX systems, supporting concurrent client access and
+            fault-safe request handling.
+          </li>
+          <li>
+            Designed fine-grained locking and request handling to safely
+            coordinate concurrent filesystem operations over TCP, preventing
+            race conditions on shared disk structures and ensuring correctness
+            under concurrent client requests.
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h3>
+          Distributed Search Engine
+          <small> | Python · Flask · MapReduce · SQLite · AWS EC2</small>
+        </h3>
+        <ul>
+          <li>
+            Created a search engine including REST API index servers, a
+            Flask-based web interface, and ranking combining tf-idf scoring with
+            PageRank metrics, delivering results through SOA with multithreaded
+            request processing.
+          </li>
+        </ul>
+      </article>
+      <h2>Skills &amp; Interests</h2>
+      <p>
+        <b>Languages:</b> C++, Python, Go, JavaScript, TypeScript, Java, C, SQL,
+        KQL
+      </p>
+      <p>
+        <b>Frameworks/Libraries:</b> React.js, Node.js, Express, Flask, Spring,
+        Tailwind, Pandas, NumPy, PyTorch, Scikit-learn
+      </p>
+      <p>
+        <b>Tools/Platforms:</b> Git, GitHub, Kubernetes, AWS (EC2, S3, Lambda,
+        DynamoDB), MongoDB, Oracle, Webpack
+      </p>
+      <p>
+        <b>Interests:</b> Pickleball, Weightlifting, Poker, Water Skiing,
+        Skiing, NY Knicks, Rock Climbing, Saxophone, Rowing
+      </p>
+    </main>
+  </body>
+</html>
