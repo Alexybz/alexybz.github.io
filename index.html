@@ -16,7 +16,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="container">
       <nav aria-label="Main navigation">
-        <a class="wordmark" href="#home">alex<span>zhang.</span></a>
+        <a class="wordmark" href="#home">alex<span>zhang</span></a>
         <div class="nav-links">
           <a href="#experience">Experience</a><a href="#projects">Projects</a
           ><a href="#contact">Contact</a
@@ -34,8 +34,8 @@
             Hi, I’m Alex.<br /><span>I build things<br />that scale.</span>
           </h1>
           <p class="intro">
-            From distributed systems to the interfaces people use every day.
-            Currently building at <strong>Google</strong>.
+            From distributed systems to the interfaces people use every day, I'm
+            currently working at <strong>Google</strong> as a Software Engineer.
           </p>
           <div class="hero-actions">
             <a class="button" href="#experience"
@@ -149,7 +149,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">02 / SELECTED PROJECTS</p>
-            <h2>Under the hood.</h2>
+            <h2>Built to be used.</h2>
           </div>
           <a
             class="text-link"
@@ -160,8 +160,75 @@
           >
         </div>
         <div class="project-grid">
+          <article class="project project-featured">
+            <a
+              class="project-preview"
+              href="https://my-manager-phi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open MyManager live demo"
+            >
+              <img
+                src="Images/mymanager1.png"
+                alt="MyManager project dashboard"
+                loading="lazy"
+                width="720"
+                height="405"
+              />
+              <span class="preview-link" aria-hidden="true">Open demo ↗</span>
+            </a>
+            <div class="project-body">
+              <span class="project-number">01 / WEB APP</span>
+              <h3>MyManager</h3>
+              <p>
+                A project management app with task sorting, progress tracking,
+                and real-time updates.
+              </p>
+              <p class="tech">React · Next.js · Node.js · MongoDB · Tailwind</p>
+              <a
+                class="text-link project-demo"
+                href="https://my-manager-phi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live demo ↗</a
+              >
+            </div>
+          </article>
+          <article class="project project-featured">
+            <a
+              class="project-preview"
+              href="https://alexybz.github.io/alexTube/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open alexTube live demo"
+            >
+              <img
+                src="Images/alextube.png"
+                alt="alexTube video browsing interface"
+                loading="lazy"
+                width="720"
+                height="405"
+              />
+              <span class="preview-link" aria-hidden="true">Open demo ↗</span>
+            </a>
+            <div class="project-body">
+              <span class="project-number">02 / WEB APP</span>
+              <h3>alexTube</h3>
+              <p>
+                A YouTube-inspired interface for exploring videos and browsing
+                categories.
+              </p>
+              <a
+                class="text-link project-demo"
+                href="https://alexybz.github.io/alexTube/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live demo ↗</a
+              >
+            </div>
+          </article>
           <article class="project">
-            <span class="project-number">01 / SYSTEMS</span>
+            <span class="project-number">03 / SYSTEMS</span>
             <h3>Networked File System</h3>
             <p>
               A concurrent file system over TCP, with fine-grained locking and
@@ -170,7 +237,7 @@
             <p class="tech">C++ · POSIX sockets · UNIX · Multithreading</p>
           </article>
           <article class="project">
-            <span class="project-number">02 / SYSTEMS</span>
+            <span class="project-number">04 / SYSTEMS</span>
             <h3>Distributed Search Engine</h3>
             <p>
               A distributed search engine combining tf-idf and PageRank, with
@@ -181,18 +248,6 @@
         </div>
       </section>
       <section id="about" class="section about-grid">
-        <div>
-          <p class="eyebrow">03 / A LITTLE MORE</p>
-          <h2>Always learning.</h2>
-          <p class="about-copy">
-            CS at Michigan, with a business minor at Ross. Incoming machine
-            learning master’s student at Georgia Tech.
-          </p>
-          <p class="about-copy">
-            Away from my keyboard: pickleball, lifting, skiing, climbing, and
-            keeping up with the Knicks.
-          </p>
-        </div>
         <div class="education">
           <article>
             <span class="date">May 2027</span>
@@ -201,17 +256,299 @@
               B.S. Computer Science<br />Minor in Business · Stephen M. Ross
             </p>
           </article>
-          <article>
-            <span class="date">Incoming · May 2028</span>
-            <h3>Georgia Tech</h3>
-            <p>M.S. Computer Science<br />Machine Learning specialization</p>
-          </article>
         </div>
         <div class="skills">
-          <p class="eyebrow">MY TOOLKIT</p>
-          <p>C++ · Python · Go · TypeScript · Java · SQL</p>
-          <p>React · Angular · Spring · Flask · PyTorch</p>
-          <p>AWS · Redis · Kubernetes · OpenTelemetry</p>
+          <p class="eyebrow" id="toolkit-heading">MY TOOLKIT</p>
+          <ul class="skill-logos" aria-labelledby="toolkit-heading">
+            <li>
+              <span class="skill-icon" tabindex="0" role="img" aria-label="C++">
+                <img
+                  src="Images/skills/cplusplus.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">C++</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Python"
+              >
+                <img
+                  src="Images/skills/python.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Python</span>
+              </span>
+            </li>
+            <li>
+              <span class="skill-icon" tabindex="0" role="img" aria-label="Go">
+                <img
+                  src="Images/skills/go.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Go</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="JavaScript"
+              >
+                <img
+                  src="Images/skills/javascript.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">JavaScript</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="TypeScript"
+              >
+                <img
+                  src="Images/skills/typescript.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">TypeScript</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Java"
+              >
+                <img
+                  src="Images/skills/java.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Java</span>
+              </span>
+            </li>
+            <li>
+              <span class="skill-icon" tabindex="0" role="img" aria-label="C">
+                <img
+                  src="Images/skills/c.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">C</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="React"
+              >
+                <img
+                  src="Images/skills/react.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">React</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Angular"
+              >
+                <img
+                  src="Images/skills/angular.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Angular</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Node.js"
+              >
+                <img
+                  src="Images/skills/nodejs.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Node.js</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon skill-icon-light"
+                tabindex="0"
+                role="img"
+                aria-label="Express"
+              >
+                <img
+                  src="Images/skills/express.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Express</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon skill-icon-light"
+                tabindex="0"
+                role="img"
+                aria-label="Flask"
+              >
+                <img
+                  src="Images/skills/flask.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Flask</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Spring"
+              >
+                <img
+                  src="Images/skills/spring.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Spring</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Tailwind CSS"
+              >
+                <img
+                  src="Images/skills/tailwindcss.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true"
+                  >Tailwind CSS</span
+                >
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="PyTorch"
+              >
+                <img
+                  src="Images/skills/pytorch.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">PyTorch</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Redis"
+              >
+                <img
+                  src="Images/skills/redis.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Redis</span>
+              </span>
+            </li>
+            <li>
+              <span
+                class="skill-icon"
+                tabindex="0"
+                role="img"
+                aria-label="Kubernetes"
+              >
+                <img
+                  src="Images/skills/kubernetes.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">Kubernetes</span>
+              </span>
+            </li>
+            <li>
+              <span class="skill-icon" tabindex="0" role="img" aria-label="AWS">
+                <img
+                  src="Images/skills/amazonwebservices.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <span class="skill-tooltip" aria-hidden="true">AWS</span>
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="contact" class="section contact">
@@ -244,5 +581,17 @@
     <footer class="container">
       <span>© 2026 Alexander Zhang</span><a href="#home">Back to top ↑</a>
     </footer>
+    <script>
+      document.querySelectorAll(".skill-icon").forEach((icon) => {
+        icon.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") icon.classList.add("tooltip-dismissed");
+        });
+        ["pointerenter", "focus", "blur"].forEach((event) => {
+          icon.addEventListener(event, () =>
+            icon.classList.remove("tooltip-dismissed"),
+          );
+        });
+      });
+    </script>
   </body>
 </html>
