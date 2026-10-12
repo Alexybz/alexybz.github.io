@@ -455,7 +455,7 @@ h3 {
   align-items: center;
   gap: 32px;
   width: fit-content;
-  font-size: clamp(23px, 4vw, 42px);
+  font-size: clamp(20px, 3vw, 30px);
   letter-spacing: -1px;
   margin: 24px 0 30px;
 }
@@ -684,4 +684,53 @@ footer {
 .social-logo-github,
 .social-logo-instagram {
   filter: brightness(0) invert(1);
+}
+
+.social-link {
+  width: 52px;
+  gap: 5px;
+}
+.social-outbound {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1;
+}
+.social-link:hover .social-outbound,
+.social-link:focus-visible .social-outbound {
+  color: var(--accent);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+.coursework h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.coursework-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.coursework-chips li {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  .education {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
