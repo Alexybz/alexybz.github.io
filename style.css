@@ -665,3 +665,23 @@ footer {
   width: 20px;
   height: 20px;
 }
+
+.social-links {
+  gap: 12px;
+  align-items: center;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+}
+.social-link:hover {
+  background: var(--panel);
+}
+.social-logo {
+  width: 24px;
+  height: 24px;
+}
+.social-logo-github,
+.social-logo-instagram {
+  filter: brightness(0) invert(1);
+}
