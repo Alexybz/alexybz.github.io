@@ -292,21 +292,75 @@ h3 {
   color: var(--muted);
   margin: 6px 0;
 }
-.skills {
-  grid-column: 1 / -1;
-  border-top: 1px solid var(--line);
-  padding-top: 28px;
+.education article {
+  border-left: 2px solid var(--accent);
+  padding-left: 24px;
 }
-.skills .eyebrow {
-  margin: 0 0 24px;
+.skills .section-heading {
+  margin-bottom: 8px;
+}
+.skills-viewport {
+  overflow-x: auto;
+  padding: 42px 8px 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) var(--bg);
+}
+.skills-track {
+  display: flex;
+  width: max-content;
+}
+.marquee-ready .skills-track {
+  animation: cycle-technologies 38s linear infinite;
+}
+.marquee-ready .skills-viewport {
+  overflow-x: hidden;
 }
 .skill-logos {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 32px;
   list-style: none;
-  padding: 0;
+  padding: 0 32px 0 0;
   margin: 0;
+}
+.skill-logos li {
+  flex-shrink: 0;
+}
+.marquee-toggle {
+  font: inherit;
+  font-size: 12px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+.marquee-ready .marquee-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.marquee-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.skills-viewport:hover .skills-track,
+.marquee-paused .skills-track {
+  animation-play-state: paused;
+}
+.skills-viewport:focus-within {
+  overflow-x: auto;
+}
+.skills-viewport:focus-within .skills-track {
+  animation: none;
+}
+@keyframes cycle-technologies {
+  to {
+    transform: translateX(-50%);
+  }
 }
 .skill-icon {
   position: relative;
@@ -524,9 +578,6 @@ footer {
     grid-column: auto;
     display: block;
   }
-  .skill-logos {
-    gap: 12px;
-  }
   .project-featured {
     padding: 0;
   }
@@ -545,6 +596,16 @@ footer {
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .marquee-ready .skills-track {
+    animation: none;
+  }
+  .marquee-ready .skills-viewport {
+    overflow-x: auto;
+  }
+  .skill-logos[aria-hidden="true"],
+  .marquee-ready .marquee-toggle {
+    display: none;
+  }
   html {
     scroll-behavior: auto;
   }
