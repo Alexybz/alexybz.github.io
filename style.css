@@ -327,28 +327,7 @@ h3 {
 .skill-logos li {
   flex-shrink: 0;
 }
-.marquee-toggle {
-  font: inherit;
-  font-size: 12px;
-  background: transparent;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  padding: 7px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: none;
-}
-.marquee-ready .marquee-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-.marquee-toggle:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-.skills-viewport:hover .skills-track,
-.marquee-paused .skills-track {
+.skills-viewport:hover .skills-track {
   animation-play-state: paused;
 }
 .skills-viewport:focus-within {
@@ -602,8 +581,7 @@ footer {
   .marquee-ready .skills-viewport {
     overflow-x: auto;
   }
-  .skill-logos[aria-hidden="true"],
-  .marquee-ready .marquee-toggle {
+  .skill-logos[aria-hidden="true"] {
     display: none;
   }
   html {
@@ -612,5 +590,68 @@ footer {
   .skill-icon img,
   .project-preview img {
     transition: none;
+  }
+}
+
+.company-name,
+.school-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.brand-logo-amazon {
+  width: 50px;
+  height: 30px;
+  padding: 4px;
+  background: white;
+  border-radius: 4px;
+}
+.school-logo {
+  width: 56px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+}
+.tech-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+.tech-logo {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.tech-logo-light {
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 600px) {
+  .company-name {
+    gap: 8px;
+  }
+  .company-name h3 {
+    font-size: 18px;
+  }
+  .brand-logo {
+    width: 24px;
+    height: 24px;
+  }
+  .brand-logo-amazon {
+    width: 42px;
   }
 }
